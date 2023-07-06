@@ -1,13 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 * {
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
+}
+
+.temp_img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  border: 0px solid transparent !important;
+  height: 550px !important;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0;
+}
+
+.card__image {
+  height: 350px !important;
+}
+
+.card_header {
+  height: 200px !important;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: rgb(224, 130, 238);
+  /* background: linear-gradient(
+    to bottom,
+    rgb(243, 165, 255),
+    rgb(224, 130, 238)
+  ); */
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #d1913c;
+  /* background: linear-gradient(to bottom, #ffd194, #d1913c); */
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  /* background: linear-gradient(to bottom, #ef473a, #cb2d3e); */
+  color: #fafafa;
+}
+
+.tag-orange {
+  background: #eca438;
+  /* background: linear-gradient(to bottom, #eea537, #f9d843); */
+  color: #fafafa;
+}
+
+.tag-green {
+  background: #6acb2d;
+  /* background: linear-gradient(to bottom, #cbef3a, #55cb2d); */
+  color: #fafafa;
+}
+
+.card__body > p {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  height: 100px;
+}
+
+.card__footer {
+  font-size: 0.9rem;
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user__image {
+  border-radius: 50% !important;
+  aspect-ratio: 1/1;
+  width: 45px;
+  height: 45px;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+.pad_0 {
+  padding: 0 !important;
 }
 
 a {
   color: black !important;
   text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* border: 1px solid red !important; */
 }
 
 .Toast {
@@ -15,24 +131,80 @@ a {
   bottom: 30px;
   right: 30px;
   text-align: left;
+  background-color: white !important;
 }
 
 .Banner {
   height: 500px;
   width: 100vw;
-  background-color: lightgray;
-  /* background-image: url('https://images.squarespace-cdn.com/content/v1/59d4c8d9e45a7cb9302584f4/1518598121031-TQK0DRVEB7QKW27CHCU3/personalised+garden+illustration+2.jpg?format=1000w'); */
-  /* border: black 1px solid; */
-  background-size: contain;
-  /* background-repeat: no-repeat; */
+  /* background-color: lightgray; */
+  background-image: url("https://previews.123rf.com/images/bsd555/bsd5552010/bsd555201001428/156978559-organic-farming-word-concepts-banner-natural-production-green-meat-healthy-lifestyle.jpg");
+  /* background-image: url("https://images.squarespace-cdn.com/content/v1/59d4c8d9e45a7cb9302584f4/1518598121031-TQK0DRVEB7QKW27CHCU3/personalised+garden+illustration+2.jpg?format=1000w"); */
+
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-
-.Blog {
-  height: 400px;
-  width: 400px;
+.BlogRedirect {
+  aspect-ratio: 1/1;
   background-color: lightgray;
   margin-top: 40px;
+  background-position: 50%;
+  background-size: contain;
+  transition: 1s;
+}
+
+.BlogRedirect:hover {
+  background-position: 3%;
+  transition: 1s;
+}
+
+.BlogRedirect > p {
+  background-color: whitesmoke;
+}
+
+img {
+  width: 100%;
+}
+
+.Blog1BG {
+  background-image: url("https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2021/06/GettyImages-1201830693_thumb.jpg");
+  background-size: auto;
+}
+
+.BlogComingSoonBG {
+  /* background-color: antiquewhite; */
+  aspect-ratio: 1/1;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px dashed black;
+}
+
+.Blog {
+  text-align: left;
+  font-size: 18px;
+}
+
+.Blog > p > h2 {
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+.BlogMainContainer {
+  /* background-color: rgb(240, 255, 217); */
+  padding: 0;
+  margin: 0;
+  /* width: 1000px; */
+  min-height: 85vh;
+}
+
+.BlogContainer {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .ReadMore {
@@ -53,40 +225,38 @@ a {
   border: #858991 1px dashed;
   padding: 10px;
   cursor: pointer;
-}
-
-/* .NavButtons>a {
-  padding: 10px;
-  margin: 0px;
-} */
-
-.NavButtons:hover {
   background-color: antiquewhite;
 }
 
+.NavButtons:hover {
+  /* background-color: whitesmoke; */
+}
+
 .NavButtons:active {
-  background-color: whitesmoke;
+  background-color: transparent;
 }
 
 .App {
-  font-family: 'Annie Use Your Telescope', cursive;
-  font-weight: bolder;
+  /* font-family: 'Annie Use Your Telescope', cursive; */
+  font-family: "Quicksand", sans-serif;
+
+  /* font-weight: bolder; */
   text-align: center;
   padding-top: 20px;
-
-  /* height: 100vh; */
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-size: 20px;
+  /* min-height: 100vh; */
 }
 
 .MainLogo {
   font-size: 40px;
   font-weight: 700;
+  font-family: "Annie Use Your Telescope", cursive;
 }
 
 .MainNavbar {
@@ -95,13 +265,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Annie Use Your Telescope", cursive;
 }
 
 .LandingDirection {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 80vh; */
 }
 
 .CenterImage {
@@ -109,13 +279,11 @@ a {
   margin: 0;
 }
 
-
 /* slider scrolls */
 
 /* slider scrolls */
 
 /* slider scrolls */
-
 
 .SliderScrollLeft {
   width: 700px;
@@ -177,7 +345,6 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-
 .SliderScrollBottom {
   width: 80vw;
   height: 250px;
@@ -208,7 +375,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-.SliderScrollText>h3 {
+.SliderScrollText > h3 {
   font-weight: 700;
 }
 
@@ -223,8 +390,6 @@ a {
 .Mobile {
   display: none;
 }
-
-.Blog {}
 
 @media only screen and (max-width: 900px) {
   .MainNavbar {
@@ -250,14 +415,8 @@ a {
 
   .SliderScrollCard {
     height: 400px;
-
     font-size: 15px;
     opacity: 1;
-    /* border-top: saddlebrown 1px solid; */
-
-
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
   }
 }

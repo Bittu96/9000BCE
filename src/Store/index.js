@@ -3,7 +3,7 @@
 function Store() {
   return (
     <div className="Store">
-        <h1>THis is Store</h1>
+      <h1>coming soon..</h1>
     </div>
   );
 }
